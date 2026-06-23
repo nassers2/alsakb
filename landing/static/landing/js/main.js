@@ -9,12 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var navbar = document.querySelector(".main-navbar");
   if (navbar) {
-    window.addEventListener("scroll", function () {
-      if (window.scrollY > 30) {
-        navbar.style.backgroundColor = "rgba(11, 37, 69, 0.98)";
-      } else {
-        navbar.style.backgroundColor = "rgba(11, 37, 69, 0.95)";
-      }
-    });
+    var toggleScrolled = function () {
+      navbar.classList.toggle("scrolled", window.scrollY > 30);
+    };
+    toggleScrolled();
+    window.addEventListener("scroll", toggleScrolled);
   }
 });
