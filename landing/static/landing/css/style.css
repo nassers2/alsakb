@@ -1,0 +1,234 @@
+:root {
+  --dark-blue: #0b2545;
+  --mid-blue: #134074;
+  --accent-blue: #1f6feb;
+  --light-grey: #f4f6f9;
+  --grey: #6c757d;
+}
+
+body {
+  font-family: "Tahoma", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: #1c1c1c;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.bg-light-grey {
+  background-color: var(--light-grey);
+}
+
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+
+/* Navbar */
+.main-navbar {
+  background-color: rgba(11, 37, 69, 0.95);
+  transition: background-color 0.3s ease;
+}
+
+.main-navbar .nav-link {
+  color: #e9eef5;
+  font-weight: 500;
+}
+
+.main-navbar .nav-link:hover {
+  color: #ffffff;
+}
+
+/* Hero */
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--dark-blue) 0%, var(--mid-blue) 60%, var(--accent-blue) 120%);
+  color: #ffffff;
+  padding-top: 90px;
+}
+
+.hero-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 1.25rem;
+}
+
+.hero-text {
+  font-size: 1.15rem;
+  color: #d9e2ec;
+  line-height: 1.9;
+}
+
+.hero-icon {
+  font-size: 12rem;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.btn-primary {
+  background-color: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
+
+.btn-primary:hover {
+  background-color: #1857c4;
+  border-color: #1857c4;
+}
+
+/* Section titles */
+.badge-label {
+  display: inline-block;
+  background-color: rgba(31, 111, 235, 0.1);
+  color: var(--accent-blue);
+  font-weight: 600;
+  padding: 6px 18px;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.badge-label-light {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--dark-blue);
+  margin-bottom: 1rem;
+}
+
+.section-text {
+  color: var(--grey);
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Stat cards */
+.stat-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem 1rem;
+  box-shadow: 0 10px 30px rgba(11, 37, 69, 0.08);
+  height: 100%;
+}
+
+.stat-card i {
+  font-size: 2rem;
+  color: var(--accent-blue);
+}
+
+.stat-card h3 {
+  font-weight: 800;
+  color: var(--dark-blue);
+  margin: 0.5rem 0 0.25rem;
+}
+
+.stat-card p {
+  color: var(--grey);
+  margin: 0;
+}
+
+/* App cards */
+.app-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem 1.5rem;
+  box-shadow: 0 10px 30px rgba(11, 37, 69, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+}
+
+.app-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(11, 37, 69, 0.12);
+}
+
+.app-card i {
+  font-size: 2.5rem;
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+}
+
+.app-card h4 {
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin: 0;
+}
+
+/* Feature cards */
+.feature-card {
+  background: #ffffff;
+  border: 1px solid #e9eef5;
+  border-radius: 16px;
+  padding: 2.5rem 1.25rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(11, 37, 69, 0.1);
+}
+
+.feature-card i {
+  font-size: 2.2rem;
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+}
+
+.feature-card h5 {
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin: 0;
+}
+
+/* Join form */
+.join-form {
+  border-radius: 20px;
+}
+
+.join-form .form-label {
+  color: var(--dark-blue);
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-blue);
+  color: #d9e2ec;
+}
+
+/* Thank you page */
+.thank-you-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--dark-blue) 0%, var(--mid-blue) 100%);
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+.thank-you-icon {
+  font-size: 5rem;
+  color: #4caf50;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-icon {
+    font-size: 7rem;
+  }
+  .section-padding {
+    padding: 56px 0;
+  }
+}

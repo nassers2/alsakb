@@ -1,0 +1,211 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#hero">
+      <i class="bi bi-truck me-2"></i>السكب المحجل
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-2">
+        <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
+        <li class="nav-item"><a class="nav-link" href="#apps">شركاؤنا</a></li>
+        <li class="nav-item"><a class="nav-link" href="#features">مميزاتنا</a></li>
+        <li class="nav-item"><a class="nav-link" href="#join">انضم إلينا</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header id="hero" class="hero-section d-flex align-items-center">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-7 text-center text-lg-start" data-aos="fade-up">
+        <h1 class="hero-title">شريكك الموثوق في خدمات التوصيل والخدمات اللوجستية</h1>
+        <p class="hero-text">
+          تقدم مؤسسة السكب المحجل للخدمات اللوجستية حلولاً احترافية لإدارة وتشغيل مندوبي التوصيل
+          وخدمات التوصيل للمنصات الرقمية بكفاءة وموثوقية عالية.
+        </p>
+        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-4">
+          <a href="#join" class="btn btn-primary btn-lg px-4">انضم إلينا الآن</a>
+          <a href="#contact" class="btn btn-outline-light btn-lg px-4">تواصل معنا</a>
+        </div>
+      </div>
+      <div class="col-lg-5 mt-5 mt-lg-0 text-center" data-aos="fade-up" data-aos-delay="150">
+        <i class="bi bi-truck hero-icon"></i>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="section-padding">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-up">
+        <span class="badge-label">من نحن</span>
+        <h2 class="section-title">نبذة عن المؤسسة</h2>
+        <p class="section-text">
+          السكب المحجل للخدمات اللوجستية مؤسسة متخصصة في تشغيل وإدارة خدمات التوصيل، ونسعى لتوفير
+          بيئة عمل احترافية وفرص مستمرة للمناديب بالتعاون مع أبرز تطبيقات التوصيل في المملكة.
+        </p>
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="row g-4 text-center">
+          <div class="col-6">
+            <div class="stat-card">
+              <i class="bi bi-people-fill"></i>
+              <h3>+500</h3>
+              <p>مندوب توصيل</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stat-card">
+              <i class="bi bi-clock-fill"></i>
+              <h3>24/7</h3>
+              <p>متابعة وتشغيل</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Apps Section -->
+<section id="apps" class="section-padding bg-light-grey">
+  <div class="container text-center">
+    <span class="badge-label">شركاؤنا</span>
+    <h2 class="section-title">التطبيقات التي نعمل معها</h2>
+    <p class="section-text mx-auto mb-5" style="max-width: 700px;">
+      نوفر فرص عمل للمندوبين عبر أشهر تطبيقات التوصيل.
+    </p>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="app-card">
+          <i class="bi bi-bicycle"></i>
+          <h4>هنقرستيشن</h4>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="app-card">
+          <i class="bi bi-box-seam"></i>
+          <h4>جاهز</h4>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="app-card">
+          <i class="bi bi-lightning-charge-fill"></i>
+          <h4>كيتا</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="section-padding">
+  <div class="container text-center">
+    <span class="badge-label">مميزاتنا</span>
+    <h2 class="section-title mb-5">مميزات العمل معنا</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" data-aos="fade-up">
+        <div class="feature-card">
+          <i class="bi bi-headset"></i>
+          <h5>دعم مستمر للمندوبين</h5>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-card">
+          <i class="bi bi-briefcase-fill"></i>
+          <h5>فرص عمل متجددة</h5>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-card">
+          <i class="bi bi-bar-chart-fill"></i>
+          <h5>إدارة احترافية</h5>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-card">
+          <i class="bi bi-clock-history"></i>
+          <h5>متابعة وتشغيل على مدار الساعة</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Join Form Section -->
+<section id="join" class="section-padding bg-dark-blue text-white">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-7 text-center" data-aos="fade-up">
+        <span class="badge-label badge-label-light">سجل الآن</span>
+        <h2 class="section-title text-white">انضم إلينا الآن</h2>
+        <p class="section-text text-white-75 mb-4">
+          عبّئ النموذج التالي وسيتواصل معك فريقنا في أقرب وقت.
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+      <div class="col-lg-6">
+        <form method="post" class="join-form card border-0 shadow-lg p-4 p-md-5">
+          {% csrf_token %}
+          <div class="mb-3 text-start">
+            <label for="{{ form.full_name.id_for_label }}" class="form-label">الاسم الكامل</label>
+            {{ form.full_name }}
+            {% for error in form.full_name.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}
+          </div>
+          <div class="mb-3 text-start">
+            <label for="{{ form.iqama_number.id_for_label }}" class="form-label">رقم الإقامة</label>
+            {{ form.iqama_number }}
+            {% for error in form.iqama_number.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}
+          </div>
+          <div class="mb-4 text-start">
+            <label for="{{ form.phone_number.id_for_label }}" class="form-label">رقم التواصل</label>
+            {{ form.phone_number }}
+            {% for error in form.phone_number.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg w-100">إرسال الطلب</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section-padding text-center">
+  <div class="container" data-aos="fade-up">
+    <span class="badge-label">تواصل معنا</span>
+    <h2 class="section-title">هل لديك استفسار؟</h2>
+    <p class="section-text mb-4">يسعدنا تواصلك معنا في أي وقت</p>
+    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+      <a href="tel:{{ CONTACT_PHONE }}" class="btn btn-outline-primary btn-lg px-4">
+        <i class="bi bi-telephone-fill me-2"></i>{{ CONTACT_PHONE }}
+      </a>
+      <a href="https://wa.me/{{ WHATSAPP_NUMBER }}" target="_blank" rel="noopener" class="btn btn-success btn-lg px-4">
+        <i class="bi bi-whatsapp me-2"></i>تواصل عبر واتساب
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center py-4">
+  <div class="container">
+    <p class="mb-1 fw-bold">{{ SITE_NAME }}</p>
+    <p class="mb-1 small">جميع الحقوق محفوظة &copy; {% now "Y" %}</p>
+    <p class="mb-0 small">{{ SITE_DOMAIN }}</p>
+  </div>
+</footer>
+
+{% endblock %}

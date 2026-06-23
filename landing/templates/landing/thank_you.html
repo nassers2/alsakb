@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}تم استلام طلبك | {{ SITE_NAME }}{% endblock %}
+
+{% block content %}
+<div class="thank-you-section d-flex align-items-center justify-content-center text-center">
+  <div class="container" data-aos="zoom-in">
+    <i class="bi bi-check-circle-fill thank-you-icon"></i>
+    <h1 class="mt-4">شكراً لتواصلك معنا</h1>
+    <p class="section-text mx-auto mt-3" style="max-width: 600px;">
+      تم استلام طلب انضمامك بنجاح، سيقوم فريقنا بالتواصل معك في أقرب وقت ممكن.
+    </p>
+    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center mt-4">
+      <a href="{% url 'landing:index' %}" class="btn btn-primary btn-lg px-4">العودة للصفحة الرئيسية</a>
+      <a href="https://wa.me/{{ WHATSAPP_NUMBER }}" target="_blank" rel="noopener" class="btn btn-success btn-lg px-4">
+        <i class="bi bi-whatsapp me-2"></i>تواصل عبر واتساب
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}
